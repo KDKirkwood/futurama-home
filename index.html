@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favourite Comedy: Futurama</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      color: #222;
+    }
+
+    /* grid for the holy grail layout */
+    .container {
+      display: grid;
+      grid-template-columns: 180px 1fr 220px;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "header header header"
+        "nav    main   aside"
+        "footer footer footer";
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #1b5e7b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: #d9eef7;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #1b5e7b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    article {
+      grid-area: main;
+      padding: 20px;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: #fff3cd;
+      padding: 20px;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #1b5e7b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Futurama</h1>
+      <p>My favourite comedy series</p>
+    </header>
+
+    <!-- menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Futurama">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- main content -->
+    <article>
+      <h2>Why I Like Futurama</h2>
+      <p>
+        Futurama is a cartoon made by Matt Groening, the same guy who made The
+        Simpsons. It started on Fox in 1999. It is about Fry, a pizza delivery
+        guy in New York who accidentally gets frozen on New Year's Eve 1999 and
+        wakes up in the year 3000.
+      </p>
+      <p>
+        He ends up working at Planet Express, a delivery company run by his
+        very distant nephew, Professor Farnsworth. The crew delivers stuff
+        all over space and something usually goes wrong.
+      </p>
+      <p>
+        My favourite character is Bender, the robot who steals everything and
+        drinks too much. I like this show because it is really funny, but it
+        also sneaks in science and math jokes with adult humor. A few episodes are also pretty
+        sad, which surprised me for a cartoon.
+      </p>
+    </article>
+
+    <!-- extra info -->
+    <aside>
+      <h3>Main Characters</h3>
+      <ul>
+        <li>Fry</li>
+        <li>Leela</li>
+        <li>Bender</li>
+        <li>Professor Farnsworth</li>
+        <li>Dr. Zoidberg</li>
+        <li>Amy Wong</li>
+        <li>Hermes Conrad</li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>Developed by Kyle Kirkwood &copy; 2026</p>
+    </footer>
+
+  </div>
+</body>
+</html>
